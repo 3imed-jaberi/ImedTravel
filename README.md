@@ -23,8 +23,7 @@
  - you have to install NodeJS as it's the service and also to use its package manager npm.
 
 ## How to run the application
- Follow this video : 
- ![imed-jaberi-web-univeristy-project](https://scontent.ftun11-1.fna.fbcdn.net/v/t1.15752-9/57530973_879089172439749_5007671793981325312_n.png?_nc_cat=104&_nc_ht=scontent.ftun11-1.fna&oh=4b6c5cacb8a55348e0a2262e08e788d2&oe=5D46AB14)
+ [ Follow This Link For The Video ](https://drive.google.com/drive/folders/1EbE_P6Qo1dbsQXBivSt7Zhcs5LhlaMcD?usp=sharing)
  
 ## What's next ?
  - convert every thing in REACT to TypeScript (TSX) or add Facbook Flow.
