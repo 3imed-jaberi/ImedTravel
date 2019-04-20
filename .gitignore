@@ -1,0 +1,21 @@
+
+
+#                        **********************************************************            
+#                        *      @PHP : Projet Agence de voyage                    *            
+#                        *      @Classe : 2IM3                                    *            
+#                        *      @Nom et @Prénom : Jaberi Imed                     *            
+#                        *      @Email : imed_jebari@hotmail.fr                   *            
+#                        *      @GitHub : https://github.com/3imed-jaberi         *            
+#                        **********************************************************     
+
+
+# --- cached all node_modules in front end side & chatbot api .. ---
+
+
+# 1 - front end :  
+Chatbot API/chat/node_modules
+Chatbot API/chat/package-lock.json
+
+# 2 - chatbot api :  
+Client/node_modules
+Client/package-lock.json
