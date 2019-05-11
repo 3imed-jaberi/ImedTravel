@@ -68,11 +68,13 @@
   // address .. 
   if ( isValidLength($address1,10,'supp') === 'false' || isValidLength($address1,120,'min') === 'false' ){  
     $errors = array_merge($errors, ["address1" => "the address should be minimaum 10 chars & maximum 120 chars .."]);
-  }else{
+  }
+
+  /* else{
           if ( isValidAlphabet($address1) === 'false' ) {
               $errors =  array_merge($errors, ["$address1" => "the address should be strings content alphabet ( a-z / A-Z ) .."]);
           }
-  }
+  } */
 
   if ($nbP == '-1' ){
     $errors = array_merge($errors, ["nbP" => " should be select nubmer of your companys > min two peoples < .. "]);
