@@ -8,6 +8,7 @@
 
   require_once './functions/main.php';
 
+  
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     fetchAllTrips('places');
   }else {

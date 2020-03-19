@@ -13,10 +13,9 @@
     // Get data .. 
     $data = json_decode(file_get_contents("php://input"));
 
-    // echo $mail . "/" . $user . "/" . $phone . "/" . $msg ; 
     // Save data in the database for scraping and use this data ... 
     saveEmailInformations('emails', $data);
-    // Send The Email [ mail(To, Subject, Message, Headers, Parameters) ]
+    // Send The Email [mail(To, Subject, Message, Headers, Parameters)]
     sendEmail(ADMIN_EMAIL , $data->mail , $data->msg );
   }else {
     echo json_encode(['error' => 'can be get this file with POST request only']);

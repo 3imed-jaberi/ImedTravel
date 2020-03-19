@@ -14,10 +14,9 @@
     $data = json_decode(file_get_contents("php://input"));
     // Save booking in the database .. 
     saveBooking('booking',$data);
-
   }else if ($_SERVER['REQUEST_METHOD'] == 'DELETE') {
     // Get data .. 
-    $data =  $_GET['cin1'] ; 
+    $data = $_GET['cin1'] ; 
     // delete booking from the database .. 
     destroyBooking('booking',$data);
   }else{
