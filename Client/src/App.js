@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Navbar, Footer/*, ClientOptions */ } from './components';
-
-// my pages .. 
-import Home from './pages/Home';
-import Search from './pages/Search';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
-import AboutCreator from './pages/About Creator';
-import NotFound from './pages/Not Found';
-import Booking from './pages/Booking';
+import { Home, Search, Gallery, Contact, AboutCreator, NotFound, Booking } from './pages';
 import './assets/styles/App.css';
 
 
