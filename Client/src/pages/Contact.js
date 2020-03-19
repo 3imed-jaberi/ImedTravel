@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
+import { Map , Information, Chatbot } from '../components';
+import { Materialize_ScrollSpy } from '../assets/scripts';
+import '../assets/styles/Alert.css';
 import axios from 'axios';
 
-import { Map , Information } from "../components/Contact";
-import Chatbot from "../components/Chatbot";
 
-
-import { Materialize_ScrollSpy } from "../assets/scripts";
-
-import "../assets/styles/Alert.css";
 
 class Contact extends Component {
 
@@ -60,35 +57,35 @@ class Contact extends Component {
 
   render() {
     return (
-          <div id="contact" className="section section-contact scrollspy">
-            <div className="container">
+          <div id='contact' className='section section-contact scrollspy'>
+            <div className='container'>
       <br/>
       <br/>
       <br/>
-              <div className="row">
-                 <div className="col s12 m6">
+              <div className='row'>
+                 <div className='col s12 m6'>
                    <Information />
                     <Map />
                  </div>
-                 <div className="col s12 m6">
-          <div className="card-panel grey lighten-3">
+                 <div className='col s12 m6'>
+          <div className='card-panel grey lighten-3'>
             <form onSubmit={this.handleSubmit}>
             <h5>Please fill out this form</h5>
-            <div className="input-field">
-              <input type="text" placeholder="Name"  id="name" onChange={this.handleUserChange} required/>
+            <div className='input-field'>
+              <input type='text' placeholder='Name'  id='name' onChange={this.handleUserChange} required/>
             </div>
-            <div className="input-field">
-              <input type="text" placeholder="Email" id="email" onChange={this.handleMailChange} />
+            <div className='input-field'>
+              <input type='text' placeholder='Email' id='email' onChange={this.handleMailChange} />
             </div>
-            <div className="input-field">
-              <input type="text" placeholder="Phone" id="phone" onChange={this.handlePhoneChange} />
+            <div className='input-field'>
+              <input type='text' placeholder='Phone' id='phone' onChange={this.handlePhoneChange} />
             </div>
-            <div className="input-field">
-              <textarea className="materialize-textarea" placeholder="Enter Message" id="msg" onChange={this.handleMsgChange}></textarea>
+            <div className='input-field'>
+              <textarea className='materialize-textarea' placeholder='Enter Message' id='msg' onChange={this.handleMsgChange}></textarea>
             </div>
-            <input type="submit" id="send" value="Submit" className="btn" />
+            <input type='submit' id='send' value='Submit' className='btn' />
             </form>
-            { this.state.display ? <div className="msg msg-success"> Success Send .. </div> : null }
+            { this.state.display ? <div className='msg msg-success'> Success Send .. </div> : null }
             { this.state.display  ? setTimeout(() => { this.setState({ display : false }) ; this.myComponentWillUpdate() ; } , 2500) : null  }
           </div>  
                  </div>
@@ -100,4 +97,5 @@ class Contact extends Component {
   }
 };
 
-export default Contact ;
+
+export default Contact;

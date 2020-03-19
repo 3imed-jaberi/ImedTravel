@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
+import { Materialize_MaterialBoxed } from '../assets/scripts';
+import { PhotoDemoTrip, VideoDemoTrip } from '../components';
 
-
-import { Materialize_MaterialBoxed } from "../assets/scripts";
-
-
-import VideoDemoTrip from '../components/Video Demo Trip';
-import PhotoDemoTrip from '../components/Photo Demo Trip';
 
 
 class Gallery extends Component {
@@ -16,18 +12,19 @@ class Gallery extends Component {
 
   render() {
     return (
- <section id="gallery" className="section section-gallery scrollspy">
-    <div className="container">
-      <h4 className="center">
-        <span className="teal-text">Photo</span> Gallery
-      </h4><br/>
-      <VideoDemoTrip />
-      <hr/>
-      <PhotoDemoTrip />
-    </div>
-</section>
+      <section id='gallery' className='section section-gallery scrollspy'>
+        <div className='container'>
+          <h4 className='center'>
+            <span className='teal-text'>Photo</span> Gallery
+          </h4><br/>
+          <VideoDemoTrip />
+          <hr/>
+          <PhotoDemoTrip />
+        </div>
+      </section>
     )
   }
 }
 
-export default Gallery ;
+
+export default Gallery;

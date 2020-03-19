@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
+import { Slider, MainServices, PopularPlaces, Chatbot } from '../components';
 
-import Slider from '../components/Slider';
-import MainServices from '../components/Main Services';
-import PopularPlaces from '../components/Popular Places';
-import Chatbot from '../components/Chatbot';
+
 
 class Home extends Component {
   render() {
@@ -18,4 +16,5 @@ class Home extends Component {
   }
 }
 
-export default Home ;
+
+export default Home;

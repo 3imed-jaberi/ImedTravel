@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
+import { Materialize_AutoComplete } from '../assets/scripts';
+import { Slider, Trip } from '../components';
 import axios from 'axios';
 
-import { Materialize_AutoComplete } from '../assets/scripts';
-
-import Slider from '../components/Slider';
-import Trip from '../components/Trip';
 
 
 class Search extends Component {
@@ -37,8 +35,8 @@ class Search extends Component {
 
  updateSearch = event => {
   this.setState({ search : event.target.value });
-  console.log(this.state.search);
-  console.log(this.state.trips);
+  // console.log(this.state.search);
+  // console.log(this.state.trips);
   let updatedTrips = this.state.trips;
     updatedTrips = updatedTrips.filter((trip) => {
       return trip.name.toLowerCase().search(
@@ -48,36 +46,35 @@ class Search extends Component {
     if (event.target.value.length === 0){
       this.setState({trips: this.state.constTrips});
     }
-    // 
   }
 
   render() {
     return (
-      <div>
+      <>
         <Slider />
-{/*         <Search /> */}
-
-<section id="search" className="section section-search teal darken-1 white-text center scrollspy">
-    <div className="container">
-      <div className="row">
-        <div className="col s12">
-          <h3>Search Destinations</h3>
-          <div className="input-field">
-            <input type="text" value={this.state.search} onChange={this.updateSearch} className="white grey-text autocomplete" id="autocomplete-input" placeholder="Sousse, Touzeur, etc..." />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        {/* <Search /> */}
+        <section id="search" className="section section-search teal darken-1 white-text center scrollspy">
+            <div className="container">
+              <div className="row">
+                <div className="col s12">
+                  <h3>Search Destinations</h3>
+                  <div className="input-field">
+                    <input type="text" value={this.state.search} onChange={this.updateSearch} className="white grey-text autocomplete" id="autocomplete-input" placeholder="Sousse, Touzeur, etc..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         <br/><br/><br/><br/>
         <div className="container">
           <div className="row">
             { this.state.trips.map(( element , index ) => <Trip key={index} data={element} />) }
           </div>
         </div>
-    </div>
+      </>
     )
   }
 }
 
-export default Search ;
+
+export default Search;
