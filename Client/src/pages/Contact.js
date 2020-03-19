@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { sendEmail } from '../services';
 import { Map , Information, Chatbot } from '../components';
 import { Materialize_ScrollSpy } from '../assets/scripts';
 import '../assets/styles/Alert.css';
-import axios from 'axios';
 
 
 
@@ -46,11 +46,12 @@ class Contact extends Component {
   // send the eamil 
   handleSubmit = event => {
     event.preventDefault();
-    let data = { user : this.state.user , mail : this.state.mail , phone : this.state.phone , msg : this.state.msg } ;
-    axios.post(`http://localhost/api/email.php`,data)
+    let data = { user : this.state.user , mail : this.state.mail , phone : this.state.phone , msg : this.state.msg }; // i can use this.state as data 
+
+    sendEmail(data)
       .then(res => {
-        console.log(res);
-        console.log(res.data);
+        // console.log(res);
+        // console.log(res.data);
         this.setState({ display : true })
       })
   }

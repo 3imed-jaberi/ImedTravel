@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Materialize_AutoComplete } from '../assets/scripts';
 import { Slider, Trip } from '../components';
-import axios from 'axios';
+import { getAllTrips } from '../services';
 
 
 
@@ -24,7 +24,7 @@ class Search extends Component {
  componentDidMount() {
   Materialize_AutoComplete();
 
-    axios.get(`http://localhost/api/trips.php`)
+    getAllTrips()
       .then(res => {
         const trips = res.data;
         const constTrips = trips ;

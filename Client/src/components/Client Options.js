@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import { deleteBooking } from '../services';
 import { Materialize_Notifcations } from '../assets/scripts';
 import { Dashboard } from '.';
 import DownloadLink from 'react-download-link';
-import axios from 'axios';
 
 
 
@@ -68,24 +68,15 @@ class ClientOptions extends Component {
 
   handleDeleteSubmit = event => {
     event.preventDefault();
-    let cin1 = this.state.data2.cin1 ;
-    axios.delete(`http://localhost/api/booking.php?cin1=${cin1}`)
+    
+    deleteBooking(this.state.data2.cin1)
       .then(res => {
-        console.log(res);
+       // console.log(res);
         console.log(res.data);
       });
   }
- 
-/*   handlUpdateSubmit = event => {
-    event.preventDefault();
-    // update code  .. 
-    // get data and put and then uppdate table ..
-    axios.get(`http://localhost/api/booking.php?cin1=${cin1}`)
-    .then(res => {
-      console.log(res.data);
-    });
-  }
- */
+
+  
   render(){
   return (
     <div className='container'>

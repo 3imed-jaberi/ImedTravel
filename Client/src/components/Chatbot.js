@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Widget, addResponseMessage } from 'react-chat-widget';
-import axios from 'axios';
+import { handleChatbot } from '../services';
 import { ChatBotLogo } from '../constant';
 import 'react-chat-widget/lib/styles.css';
 import '../assets/styles/Chatbot.css';
@@ -10,17 +10,17 @@ import '../assets/styles/Chatbot.css';
 class Chatbot extends Component {
 
   handleNewUserMessage = (msg) => {
-    axios.post('http://localhost:5000/client',{ msg })
-    .then(res => {
-      console.log(res);
-      console.log(res.data);
-                
-      addResponseMessage(res.data.chatbotResponseMsg);
-    }).catch(error => {
-      console.log(error.response)
-      console.log(error.response.data)
-  });
+    handleChatbot(msg)
+      .then(res => {
+        // console.log(res);
+        // console.log(res.data);        
+        addResponseMessage(res.data.chatbotResponseMsg);
+      }).catch(error => {
+        // console.log(error.response)
+        // console.log(error.response.data)
+      });
   }
+
 
   render() {
     return (

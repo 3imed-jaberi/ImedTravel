@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Elements, StripeProvider } from 'react-stripe-elements';
+import { addBooking } from '../services';
 import { CheckoutStripeForm, ClientOptions } from '../components';
 import { errorIMG, twoIMG, threeIMG, fourIMG, fiveIMG } from '../constant';
 import { hideErrors , Materialize_SelectIMG , Materialize_Date } from '../assets/scripts';
 import '../assets/styles/Alert.css';
-import axios from 'axios';
 
 
 
@@ -141,17 +141,17 @@ class Booking extends Component {
       address1 : this.state.address1  
     };
 
-    axios.post(`http://localhost/api/booking.php`,data)
+    addBooking(data)
       .then(res => {
 
         if ( res.data.add !== 'success' && res.data.add !=='failed' ){
           //console.log(res);
           //console.log(res.data);
           this.setState({ errors : res.data });
-          console.log(this.state.errors);
+          // console.log(this.state.errors);
         }else{
-          console.log(res);
-          console.log(res.data);
+          // console.log(res);
+          // console.log(res.data);
           this.setState({ display : true });
         }
       });
