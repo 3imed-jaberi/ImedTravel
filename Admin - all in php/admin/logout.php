@@ -1,4 +1,5 @@
 <?php
+
   // Init session
   session_start();
 
@@ -11,4 +12,3 @@
   // Redirect to login
   header('location: login.php?edit=false');
   exit;
-  

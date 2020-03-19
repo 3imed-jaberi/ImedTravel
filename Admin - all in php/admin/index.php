@@ -28,28 +28,21 @@
 </head>
 <body>
   <div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card card-body bg-light mt-5">
-        <?php require 'components/headerboard.php' ?>
-        <div> 
-            <center>
-                <h1 id="msg"> </h1>
-            </center> 
+    <div class="row">
+      <div class="col">
+        <div class="card card-body bg-light mt-5">
+          <?php require 'components/headerboard.php' ?>
+          <div><center><h1 id="msg"></h1></center></div>
+          <div id="dasboard">
+            <?php require 'components/dashboard.php'; ?>
+          </div>
+          <div id="add_update_forms">
+            <?php require 'components/add-update forms.php'; ?>
+          </div>
         </div>
-    <div id="dasboard">
-      <?php require 'components/dashboard.php'; ?>
-    </div>
-    <div id="add_update_forms">
-      <?php require 'components/add-update forms.php'; ?>
-    </div>
       </div>
     </div>
-  </div>
 
-
-
-   
     <!-- jquery -->
     <script src="lib/jquery-3.4.0.js"></script>
     <!-- my script -->

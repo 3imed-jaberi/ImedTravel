@@ -1,4 +1,5 @@
 <?php
+
   // Init session
   session_start();
 
@@ -28,32 +29,29 @@
 </head>
 <body>
   <div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card card-body bg-light mt-5">
-        <?php require 'components/headerboard.php' ?>
-        <div> 
-            <center>
-                <h1 id="msg"> </h1>
-                <div id="printFrom">
-                <form action='print data/print.php' method='get'> 
-                  <div class="form-group">
-                    <input type="text" name="cin" class="form-control form-control-lg" placeholder='cin .. ' required>
-                    <span class="invalid-feedback"></span>
+    <div class="row">
+      <div class="col">
+        <div class="card card-body bg-light mt-5">
+          <?php require 'components/headerboard.php' ?>
+          <div> 
+              <center>
+                  <h1 id="msg"> </h1>
+                  <div id="printFrom">
+                  <form action='print data/print.php' method='get'> 
+                    <div class="form-group">
+                      <input type="text" name="cin" class="form-control form-control-lg" placeholder='cin .. ' required>
+                      <span class="invalid-feedback"></span>
+                    </div>
+                    <div>
+                      <input type="submit" class="btn btn-dark btn-block" value=" go to print" />
+                    </div>
+                  </from>
                   </div>
-                  <div>
-                    <input type="submit" class="btn btn-dark btn-block" value=" go to print" />
-                  </div>
-                </from>
-                </div>
-            </center> 
+              </center> 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-
    
     <!-- jquery -->
     <script src="lib/jquery-3.4.0.js"></script>

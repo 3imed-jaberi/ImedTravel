@@ -1,4 +1,5 @@
 <?php
+
   // Include db config
   require_once 'config/db.php';
 
@@ -66,6 +67,7 @@
     // Close connection
     unset($pdo);
   }
+
 ?>
 
 <!DOCTYPE html>

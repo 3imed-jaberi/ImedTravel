@@ -33,5 +33,5 @@ let edit = new URL(window.location.href).searchParams.get("edit");
       $("#printFrom").hide();
     },10000);
   });
-
-})
+  
+});
