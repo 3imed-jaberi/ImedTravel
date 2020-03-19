@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router , Switch , Route } from 'react-router-dom';
-
-// my layout components 
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Navbar, Footer/*, ClientOptions */ } from './components';
 
 // my pages .. 
 import Home from './pages/Home';
@@ -13,13 +10,8 @@ import Contact from './pages/Contact';
 import AboutCreator from './pages/About Creator';
 import NotFound from './pages/Not Found';
 import Booking from './pages/Booking';
- 
-// my css style 
 import './assets/styles/App.css';
 
-
-// component 
-import ClientOptions from './components/Client Options';
 
 
 class App extends Component {
@@ -38,7 +30,7 @@ class App extends Component {
                 { /* hidden routes  .. */}
                 <Route exact path="/booking" component={Booking} />
                 {/* just test .. */}
-                <Route exact path="/c" component={ClientOptions} />
+                {/* <Route exact path="/c" component={ClientOptions} /> */}
                 <Route component={NotFound} />
             </Switch>
           <br/>
@@ -49,5 +41,6 @@ class App extends Component {
   }
 
 }
+
 
 export default App;
