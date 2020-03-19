@@ -7,7 +7,7 @@ import axios from 'axios';
 import "../assets/styles/Alert.css";
 import ClientOptions from '../components/Client Options';
 
-import { hideErrors , Materialize_SelectIMG , Materialize_Date } from "../assets/scripts/main";
+import { hideErrors , Materialize_SelectIMG , Materialize_Date } from "../assets/scripts";
 
 // import 4 basic images .. 
 import errorIMG from "../assets/images/select forms/alert.png";

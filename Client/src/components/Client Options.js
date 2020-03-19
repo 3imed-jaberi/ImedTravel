@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import DownloadLink from "react-download-link";
 import axios from 'axios';
 
-import { Materialize_Notifcations } from '../assets/scripts/main' ;
+import { Materialize_Notifcations } from '../assets/scripts' ;
 import Dashboard from './Dashboard';
 
 class ClientOptions extends Component {

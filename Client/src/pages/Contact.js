@@ -5,7 +5,7 @@ import { Map , Information } from "../components/Contact";
 import Chatbot from "../components/Chatbot";
 
 
-import { Materialize_ScrollSpy } from "../assets/scripts/main";
+import { Materialize_ScrollSpy } from "../assets/scripts";
 
 import "../assets/styles/Alert.css";
 

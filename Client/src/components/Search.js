@@ -1,7 +1,7 @@
 import React , { Component } from 'react';
 
 // my js style 
-import { Materialize_AutoComplete } from '../assets/scripts/main';
+import { Materialize_AutoComplete } from '../assets/scripts';
 
 class Search extends Component {
 

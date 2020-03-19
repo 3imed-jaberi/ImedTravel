@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-import { Materialize_MaterialBoxed } from "../assets/scripts/main";
+import { Materialize_MaterialBoxed } from "../assets/scripts";
 
 
 import VideoDemoTrip from '../components/Video Demo Trip';

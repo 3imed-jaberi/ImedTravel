@@ -7,7 +7,7 @@ import resort2 from '../assets/images/slider & popular places/resort2.jpg';
 import resort3 from '../assets/images/slider & popular places/resort3.jpg';
 
 // my js style 
-import { Materialize_Slider } from '../assets/scripts/main';
+import { Materialize_Slider } from '../assets/scripts';
 
 class Slider extends Component {
 

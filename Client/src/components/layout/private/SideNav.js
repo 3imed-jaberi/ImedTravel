@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Materialize_SideNav } from "../../../assets/scripts/main";
+import { Materialize_SideNav } from "../../../assets/scripts";
 
 
 class SideNav extends Component {

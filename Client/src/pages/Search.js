@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import { Materialize_AutoComplete } from '../assets/scripts/main';
+import { Materialize_AutoComplete } from '../assets/scripts';
 
 import Slider from '../components/Slider';
 import Trip from '../components/Trip';
