@@ -13,9 +13,9 @@
 
 
 # 1 - chatbot api :  
-Chatbot API/chat/node_modules
-Chatbot API/chat/package-lock.json
+@client-app/chatbot-api/chat/node_modules
+@client-app/chatbot-api/package-lock.json
 
 # 2 - front end :  
-Client/node_modules
-Client/package-lock.json
+@client-app/client/node_modules
+@client-app/client/package-lock.json
