@@ -55,4 +55,4 @@ function PhotoDemoTrip() {
 }
 
 
-export default PhotoDemoTrip;
+export { PhotoDemoTrip };

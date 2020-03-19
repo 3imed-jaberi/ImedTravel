@@ -3,7 +3,7 @@ import { CardElement, injectStripe } from 'react-stripe-elements';
 
 
 
-class CheckoutStripeForm extends Component {
+class CheckoutStripeFormWithOutInject extends Component {
 
   constructor(props) {
     super(props);
@@ -26,4 +26,6 @@ class CheckoutStripeForm extends Component {
 }
 
 
-export default injectStripe(CheckoutStripeForm);
+const CheckoutStripeForm = injectStripe(CheckoutStripeFormWithOutInject);
+
+export { CheckoutStripeForm };

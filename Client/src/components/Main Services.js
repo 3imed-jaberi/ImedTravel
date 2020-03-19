@@ -35,4 +35,4 @@ const MainServices = () => {
 }
 
 
-export default MainServices;
+export { MainServices };

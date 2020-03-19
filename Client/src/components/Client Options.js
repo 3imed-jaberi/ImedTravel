@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Materialize_Notifcations } from '../assets/scripts';
-import Dashboard from './Dashboard';
+import { Dashboard } from '.';
 import DownloadLink from 'react-download-link';
 import axios from 'axios';
 
@@ -127,4 +127,4 @@ class ClientOptions extends Component {
 }
 
 
-export default ClientOptions;
+export { ClientOptions };

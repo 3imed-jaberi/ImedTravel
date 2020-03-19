@@ -12,4 +12,4 @@ const VideoDemoTrip = () => (
 );
 
 
-export default VideoDemoTrip;
+export { VideoDemoTrip };

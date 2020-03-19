@@ -25,4 +25,4 @@ const Trip = ({ data: { name, prix, id, path, description }}) => {
 }
 
 
-export default Trip; 
+export { Trip }; 

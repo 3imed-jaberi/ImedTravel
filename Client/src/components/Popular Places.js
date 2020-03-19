@@ -59,4 +59,4 @@ class PopularPlaces extends Component {
 }
 
 
-export default PopularPlaces;
+export { PopularPlaces };
