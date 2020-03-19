@@ -38,4 +38,4 @@ const AboutCreator = () => {
 }
 
 
-export default AboutCreator; 
+export { AboutCreator }; 

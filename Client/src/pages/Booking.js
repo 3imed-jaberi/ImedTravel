@@ -8,6 +8,13 @@ import '../assets/styles/Alert.css';
 
 
 
+// TODO: 
+// useHandleChange = event => {
+//    this.setState({ event.target.name: event.target.value });
+// }
+//
+// event.target.name: chould the name of the state var and name attribut is same ..
+//
 class Booking extends Component {
 
   componentDidMount(){
@@ -490,4 +497,4 @@ class Booking extends Component {
   }
 }
 
-export default Booking;
+export { Booking };
