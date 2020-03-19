@@ -12,10 +12,10 @@
 # --- cached all node_modules in front end side & chatbot api .. ---
 
 
-# 1 - front end :  
+# 1 - chatbot api :  
 Chatbot API/chat/node_modules
 Chatbot API/chat/package-lock.json
 
-# 2 - chatbot api :  
+# 2 - front end :  
 Client/node_modules
 Client/package-lock.json
