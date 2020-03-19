@@ -5,10 +5,10 @@
 ## What technologies that i used ?
  - Apache 2.4.35
  - Php 7.2.10
- - NodeJs 10.15.3
- - Express 4.16.4
+ - Node.js 10.15.3
+ - Express.js 4.16.4
  - Api.ai ( Dialogflow ) 4.0.3
- - React JS 16.8.5
+ - React.js 16.8.5
  - Bootstrap 4.3.1
  - Materialize 1.0.0
  - jQuery 3.\*.*
