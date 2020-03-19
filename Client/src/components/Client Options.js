@@ -1,28 +1,28 @@
-import React , { Component } from 'react';
+import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import DownloadLink from "react-download-link";
+import { Materialize_Notifcations } from '../assets/scripts';
+import Dashboard from './Dashboard';
+import DownloadLink from 'react-download-link';
 import axios from 'axios';
 
-import { Materialize_Notifcations } from '../assets/scripts' ;
-import Dashboard from './Dashboard';
+
 
 class ClientOptions extends Component {
 
   state = {
-    redirect: false , 
-    print : false ,
+    redirect: false, 
+    print : false,
     style: {
-      margin: "",
-      textDecoration: "",
-      color: "White",
-      cursor: ""
+      margin: '',
+      textDecoration: '',
+      color: 'White',
+      cursor: ''
     },
     data2 : this.props.data
   }
 
   componentDidMount(){
     Materialize_Notifcations();
-    // console.log(this.props.data);
   }
 
   setRedirect = () => {
@@ -30,8 +30,7 @@ class ClientOptions extends Component {
       this.setState({
         redirect: true
       });
-    } , 1000 )
-
+    }, 1000)
   }
   
   renderRedirect = () => {
@@ -89,38 +88,37 @@ class ClientOptions extends Component {
  */
   render(){
   return (
-    <div className="container">
+    <div className='container'>
       <Dashboard data2={this.state.data2} />
-       <br/><br/>
-      <div className="row"> 
-      <div className="col s4">   
-      </div>
-      <div className="col s3">   
-            <button className="btn-large black" id="print" >
-              <i className="material-icons right">folder_shared</i>
-              <DownloadLink label="PRINT" style={this.state.style} filename="FACTURE.txt" exportFile={this.FACTURE} />
+      <br/><br/>
+      <div className='row'> 
+        <div className='col s4'></div>
+        <div className='col s3'>   
+          <button className='btn-large black' id='print'>
+            <i className='material-icons right'>folder_shared</i>
+            <DownloadLink 
+              label='PRINT'
+              style={this.state.style} 
+              filename='FACTURE.txt' 
+              exportFile={this.FACTURE} 
+            />
             </button> 
-      </div>
-{/*         // add update later in the others verion of the app .. 
-            // chnage the col to s3 .. 
-        <div className="col s3">         
-            <form onSubmit={this.handleUpdateSubmit} >
-              <button className="btn-large blue" type="submit" id="update"> UPDATE
-                <i className="material-icons right">clear</i>
-              </button>
-            </form>
-        </div> */}
-
-        <div className="col s3">           
-            <form onSubmit={this.handleDeleteSubmit} >
-                {this.renderRedirect()}
-              <button className="btn-large pink" onClick={this.setRedirect} type="submit" id="delete"> 
-                DELETE 
-               <i className="material-icons right">clear</i>
-             </button>
-           </form>
         </div>
 
+        <div className='col s3'>           
+          <form onSubmit={this.handleDeleteSubmit} >
+            {this.renderRedirect()}
+            <button 
+              id='delete'
+              className='btn-large pink' 
+              type='submit'
+              onClick={this.setRedirect} 
+            > 
+              DELETE 
+              <i className='material-icons right'>clear</i>
+            </button>
+          </form>
+        </div>
         <br/><br/><br/><br/>
       </div>
       <br/><br/>
@@ -128,4 +126,5 @@ class ClientOptions extends Component {
   )}
 }
 
-export default ClientOptions ;
+
+export default ClientOptions;

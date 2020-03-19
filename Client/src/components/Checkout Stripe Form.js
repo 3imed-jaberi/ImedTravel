@@ -1,7 +1,10 @@
-import React, {Component} from 'react';
-import {CardElement, injectStripe} from 'react-stripe-elements';
+import React, { Component } from 'react';
+import { CardElement, injectStripe } from 'react-stripe-elements';
+
+
 
 class CheckoutStripeForm extends Component {
+
   constructor(props) {
     super(props);
     this.submit = this.submit.bind(this);
@@ -13,13 +16,14 @@ class CheckoutStripeForm extends Component {
 
   render() {
     return (
-      <div className="checkout">
-          <div className="input-field">
-                    <CardElement />
-          </div>
+      <div className='checkout'>
+        <div className='input-field'>
+          <CardElement />
+        </div>
       </div>
     );
   }
 }
+
 
 export default injectStripe(CheckoutStripeForm);
